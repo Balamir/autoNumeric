@@ -1,5 +1,65 @@
 ### Change log:
 
+### Version 1.9.34
++ Modified the 'set', 'getString' & 'getArray' methods
++ Modified the 'nBracket' function
++ General code clean up
+
+### Version 1.9.33
++ Fixed bug in "ctrl + v" paste event introduced in 1.9.32 
+
+### Version 1.9.32
++ Fixed bug when the "update" method is called in the "onfocus" event
++ Fixed the "getString" & "getArray" methods when multiple inputs share the same name - Thanks Retromax
++ Fixed bug in "ctrl + v" paste event to properly round 
+
+### Version 1.9.31
++ never officially release
+
+### Version 1.9.30
++ Fixed bug introduced 1.9.29 too interested in Ohio State vs. Oregon
+
+### Version 1.9.29
++ Fixed bug introduced in 1.9.27
+
+### Version 1.9.28
++ Fixed focusout event when the thousand separator is a period "." and only one is present "x.xxx" with not other alpha characters.
+
+### Version 1.9.27
++ Merged a mod that makes the defaults public and over ridable - Thanks Peter Boccia
++ Fixed page reload when the thousand separator is a period "."
+
+### Version 1.9.26
++ Fixed "getString" & "getArray" methods when multiple forms having some shared named inputs
+
+#### Version 1.9.25
++ Fixed mRound option "round-half-even"
++ Modified the "set" method to not throw an error when trying to "set" a null value
+
+#### Version 1.9.24
++ Changed the case on the supported elements
++ This was required because jQuery.prop('tagName') returns upper-case on html5 pages and returns lower-case on xmhtl pages
+
+#### Version 1.9.23
++ Merged mod on the "getString" method
+
+#### Version 1.9.22
++ Fixed a bug when a negative value uses brackets and currency sign on page reload thanks to Allen Dumaine
++ Additional mods to the "set" method.
++ Eliminated lastSetValue setting
+
+#### Version 1.9.21
++ Mod to checkValue function to handle empty string - thanks to jedichenbin.
++ If CHF rounding is used decimal is automatically set to 2 places  
+
+#### Version 1.9.20
++ Fixed issue for very small numbers - thanks to jedichenbin.
+
+#### Version 1.9.18
++ Added input type="tel" support.
++ Added support for Swiss currency rounding to the nearest ".00 or .05"
++ Fixed bug in Round-Half-Even "Bankers Rounding"
+
 #### Version 1.9.18
 + Fixed formatting on page load for text elements.
 

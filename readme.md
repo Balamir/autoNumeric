@@ -1,8 +1,8 @@
-[autoNumeric-1.9.18](http://www.decorplanit.com/plugin/)
+[autoNumeric-1.9.34](http://www.decorplanit.com/plugin/)
 ================================
 ### International currency formatting made easy
 
-Visit my home page for extensive demos and documentation [http://www.decorplanit.com/plugin/ ](http://www.decorplanit.com/plugin/)
+Visit my home page for extensive demo's and documentation [http://www.decorplanit.com/plugin/ ](http://www.decorplanit.com/plugin/)
 
 autoNumeric is a jQuery plugin that automatically formats currency and numbers as you type on form inputs. It supports most International numeric formats and currency signs including those used in Europe, North and South America, Asia and India lakhs (Lakhs values supported below 1 billion). 
 
@@ -36,7 +36,7 @@ The following is a list of the methods and settings/options the control autoNume
 
 +	$('someSelector').autoNumeric('update', {options});
 	+ Can be run multiple times
-	+ Overides the default settings and HTML5 data
+	+ Overrides the default settings and HTML5 data
 
 **'set'** - *returns a formatted string via jQuery's ".val()" or ".text' methods to the selected tag(s)*
 
@@ -44,15 +44,16 @@ The following is a list of the methods and settings/options the control autoNume
 
 **'get'** - *allows you to easily remove the formatting from a string on a autoNumeric controlled element and returns a string*
 
-+	$('someSelector').autoNumeric('get');
++ 	$(selector).autoNumeric('get'); - always returns value as 'nnnn.nn' with the period as the decimal point.
 
 **'getString'** - *this basically uses jQuery's .serialize() method which creates a text string (URL-encoded notation) from a set of form elements that is ready for submission. The extra step taken here is the string is split and iterated through and the formatted values are replaced with unformatted values. The string is then joined back together and returned*
 
-+	$('someSelector').autoNumeric('getString');
++ 	$(selector).autoNumeric('getString'); - always returns the value as 'nnnn.nn' with the period as the decimal point.
 
-**'getArray'** - *this basically uses jQuery's .serializeArray() method which returns a Javascript array of objects, ready to be encoded as a JSON string*
 
-+	$('someSelector').autoNumeric('getArray');
+**'getArray'** - *this basically uses jQuery's .serializeArray() method which returns a JavaScript array of objects, ready to be encoded as a JSON string*
+
++	$('someSelector').autoNumeric('getArray'); - always returns the value as 'nnnn.nn' with the period as the decimal point.
 
 **'getSettings'** - *this returns an object that shows the autoNumeric settings for the field. You may find this helpful when developing a page*
 
@@ -74,10 +75,10 @@ The following is a list of the methods and settings/options the control autoNume
 **"dGroup"** - controls the digital grouping and the placement of the thousand separator
 
 +	dGroup: '3'	 produces 333,333,333   (default)
-+	dGroup: '2'	 produces 22,22,22,333 (India's lakhs format on values below 1 billion)
++	dGroup: '2'	 produces 22,22,22,333 (India's Lakhs format on values below 1 billion)
 +	dGroup: '4'	 produces 4,4444,4444 used in some Asian country's
 
-**"aDec"** - controls the decmial character
+**"aDec"** - controls the decimal character
 
 +	aDec: '.'	period   (default)
 +	aDec: ','	comma
@@ -94,7 +95,7 @@ The following is a list of the methods and settings/options the control autoNume
 **"pSign"** - controls the placement of the currency symbol (prefix or suffix)
 
 +	pSign: 'p' prefix to the left   (default)
-+	pSign: 's' suufix to the right
++	pSign: 's' suffix to the right
 
 **"vMin"** - controls the minimum value allowed
 
@@ -123,6 +124,7 @@ The following is a list of the methods and settings/options the control autoNume
 + 	mRound: 'D'	Round Down "Round-Toward-Zero" - same as truncate
 + 	mRound: 'C'	Round to Ceiling "Toward Positive Infinity"
 + 	mRound: 'F'	Round to Floor "Toward Negative Infinity"
++ 	mRound: 'CHF'	Rounding for Swiss currency "to the nearest .00 or .05"
 
 **"aPad"** - controls padding of the decimal places
 
@@ -183,7 +185,7 @@ $('someSelector').autoNumeric('init');
 + Allows negative value of -999999999.99
 + Allows brackets on negative values
 
-*Note: By convention the data attribute is written in lowercase. Compound words (example: "aDec") need to be split and separated by a dash. The equal sign separates the name and value. The value should be enclosed with quote marks. If multiple options are being used they each need to have the own data attribute.*
+*Note: By convention the data attribute is written in lower-case. Compound words (example: "aDec") need to be split and separated by a dash. The equal sign separates the name and value. The value should be enclosed with quote marks. If multiple options are being used they each need to have the own data attribute.*
 
 
  

@@ -7,15 +7,16 @@
         "money",
         "Euro",
         "Dollar",
+        "Pound",
         "number",
         "numeric",
         "format",
         "jquery",
         "form",
-		"input",
-		"mask"
+        "input",
+        "mask"
     ],
-    "version": "1.9.18",
+    "version": "1.9.34",
     "author": {
         "name": "Robert (Bob) Knothe",
         "url": "https://github.com/BobKnothe/autoNumeric"
@@ -30,6 +31,6 @@
     "demo": "http://www.decorplanit.com/plugin/",
     "docs": "http://www.decorplanit.com/plugin/",
     "dependencies": {
-        "jquery": ">=1.7"
+        "jquery": ">=1.72"
     }
 }
